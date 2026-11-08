@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog HMP-TI ITS - Beranda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=JetBrains+Mono:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <div class="floaters" aria-hidden="true">
+    <span style="--x:4%;--s:22px;--d:18s;--w:-0s">&lt;/&gt;</span>
+    <span style="--x:16%;--s:26px;--d:22s;--w:-5s">{ }</span>
+    <span style="--x:28%;--s:20px;--d:26s;--w:-2s">0101</span>
+    <span style="--x:40%;--s:28px;--d:30s;--w:-9s">#</span>
+    <span style="--x:52%;--s:18px;--d:18s;--w:-4s">SQL</span>
+    <span style="--x:63%;--s:26px;--d:22s;--w:-11s">AI</span>
+    <span style="--x:75%;--s:18px;--d:26s;--w:-1s">NET</span>
+    <span style="--x:86%;--s:22px;--d:30s;--w:-7s">=&gt;</span>
+    <span style="--x:94%;--s:30px;--d:18s;--w:-13s">;</span>
+    <span style="--x:9%;--s:20px;--d:22s;--w:-16s">( )</span>
+    <span style="--x:34%;--s:17px;--d:26s;--w:-18s">www</span>
+    <span style="--x:69%;--s:20px;--d:30s;--w:-14s">&amp;&amp;</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#beranda">&lt;HMP-TI<span class="slash">/</span>&gt;</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-nav"><span></span><span></span><span></span></button>
+    <nav id="menu-nav" aria-label="Navigasi utama">
+      <a href="#bidang">./bidang</a>
+      <a href="#unit">./unit</a>
+      <a href="#layanan">./layanan</a>
+      <a href="#teknologi">./teknologi</a>
+      <a href="#kontak">./kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <span class="spark spark-1" aria-hidden="true">✦</span>
+      <span class="spark spark-2" aria-hidden="true">✦</span>
+      <span class="spark spark-3" aria-hidden="true">✦</span>
+      <div class="hero-text">
+        <p class="eyebrow"><span class="status"></span>Himpunan Mahasiswa Teknik Informatika ITS</p>
+        <h1>Semua kebutuhan kuliahmu ada di <span class="gradient-text"><span class="nowrap">IT-Solution</span> HMP-TI</span></h1>
+        <p>Makanan, print dan dokumen, titip jual, sampai desain dan video. Empat unit usaha HMP-TI siap membantu kegiatan kuliah dan organisasimu.</p>
+        <a class="btn" href="#unit">Lihat unit usaha</a>
+        <a class="btn btn-ghost" href="#layanan">Lihat layanan</a>
+        <ul class="stats" aria-label="Ringkasan">
+          <li><strong data-hitung="4">4</strong> unit usaha</li>
+          <li><strong data-hitung="8">8</strong> layanan</li>
+          <li><strong id="stat-produk" data-hitung="28">28</strong> daftar harga</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-window" aria-label="Contoh kode HMP-TI">
+          <div class="code-bar">
+            <span class="dot dot-pink"></span><span class="dot dot-blue"></span><span class="dot dot-pink"></span>
+            <span class="editor-tab aktif">hmp-ti.js</span><span class="editor-tab">index.html</span><span class="editor-tab">style.css</span>
+          </div>
+<pre class="code"><code><span class="baris"><span class="kw">const</span> <span class="var">hmpti</span> = {</span>
+<span class="baris">  himpunan: <span class="str">"HMP-TI ITS"</span>,</span>
+<span class="baris">  unit: [<span class="str">"F&amp;B"</span>, <span class="str">"Percetakan"</span>,</span>
+<span class="baris">         <span class="str">"Konsinyasi"</span>, <span class="str">"Kreatif"</span>],</span>
+<span class="baris">  solusi: <span class="kw">true</span></span>
+<span class="baris">};</span>
+<span class="baris"> </span>
+<span class="baris"><span class="kw">function</span> <span class="fn">bantuMahasiswa</span>() {</span>
+<span class="baris">  <span class="kw">return</span> <span class="str">"IT-Solution siap membantu!"</span>;</span>
+<span class="baris">}<span class="kursor">|</span></span></code></pre>
+          <div class="statusbar" aria-hidden="true"><span>● main</span><span>Ln 10, Col 2</span><span>UTF-8</span><span>JavaScript</span></div>
+        </div>
+        <div class="mascot-group" aria-hidden="true">
+          <svg class="mascot" viewBox="0 0 160 170">
+            <line class="mascot-line" x1="80" y1="14" x2="80" y2="38"/>
+            <circle class="mascot-ear" cx="80" cy="12" r="8"/>
+            <circle class="mascot-ear" cx="22" cy="84" r="10"/>
+            <circle class="mascot-ear" cx="138" cy="84" r="10"/>
+            <rect class="mascot-head" x="28" y="36" width="104" height="90" rx="34"/>
+            <rect class="mascot-screen" x="40" y="50" width="80" height="62" rx="24"/>
+            <ellipse class="mascot-eye" cx="62" cy="78" rx="6" ry="9"/>
+            <ellipse class="mascot-eye" cx="98" cy="78" rx="6" ry="9"/>
+            <circle class="mascot-cheek" cx="50" cy="96" r="7"/>
+            <circle class="mascot-cheek" cx="110" cy="96" r="7"/>
+            <path class="mascot-mouth" d="M72 96 q8 9 16 0"/>
+            <rect class="mascot-body" x="52" y="128" width="56" height="34" rx="16"/>
+            <text class="mascot-code" x="80" y="146">&lt;/&gt;</text>
+            <path class="mascot-arm" d="M108 140 q22 -6 26 -30"/>
+          </svg>
+          <p class="bubble">Halo! Aku Bit, maskot IT-Solution. Yuk lihat layanan kami!</p>
+        </div>
+        <div class="term-card" aria-hidden="true">
+          <p><span class="prompt">$</span> npm run solusi</p>
+          <p class="ok">✓ 4 unit usaha siap</p>
+          <p class="ok">✓ 8 layanan tersedia</p>
+        </div>
+        <span class="chip chip-1" aria-hidden="true">&lt;/&gt;</span>
+        <span class="chip chip-3" aria-hidden="true">0101</span>
+        <span class="chip chip-4" aria-hidden="true">#</span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Bidang Teknik Informatika">
+      <ul class="marquee-track">
+        <li>Pemrograman</li>
+        <li>Basis Data</li>
+        <li>Jaringan Komputer</li>
+        <li>Kecerdasan Buatan</li>
+        <li>Desain Web</li>
+        <li>Keamanan Siber</li>
+        <li>Rekayasa Perangkat Lunak</li>
+      </ul>
+      <ul class="marquee-track" aria-hidden="true">
+        <li>Pemrograman</li>
+        <li>Basis Data</li>
+        <li>Jaringan Komputer</li>
+        <li>Kecerdasan Buatan</li>
+        <li>Desain Web</li>
+        <li>Keamanan Siber</li>
+        <li>Rekayasa Perangkat Lunak</li>
+      </ul>
+    </div>
+
+    <section class="section" id="tentang">
+      <p class="tag">// tentang_kami</p>
+      <h2>Kenapa IT-Solution?</h2>
+      <p class="section-note">IT-Solution adalah unit layanan HMP-TI ITS yang menggabungkan marketing, desain kreatif, dan teknologi dalam satu tempat.</p>
+      <ul class="alasan-grid">
+        <li class="alasan-card"><span class="tech-icon" aria-hidden="true">All</span><h3>Layanan terintegrasi</h3><p>Print, desain, dan bantuan teknis bisa dipesan di satu tempat, tanpa mencari banyak penyedia.</p></li>
+        <li class="alasan-card"><span class="tech-icon" aria-hidden="true">Tim</span><h3>Dikerjakan per bidang</h3><p>Setiap pesanan ditangani sesuai bidangnya: business, creative, atau technology.</p></li>
+        <li class="alasan-card"><span class="tech-icon" aria-hidden="true">Chat</span><h3>Komunikasi cepat</h3><p>Pesan lewat Instagram, lalu kami kabari perkembangannya.</p></li>
+        <li class="alasan-card"><span class="tech-icon" aria-hidden="true">Rp</span><h3>Harga ramah mahasiswa</h3><p>Daftar harga tercantum jelas di bagian layanan, jadi kamu bisa menghitung biayanya sendiri.</p></li>
+      </ul>
+    </section>
+
+    <section class="section" id="bidang">
+      <p class="tag">// tiga_pilar</p>
+      <h2>Tiga pilar, solusi menyeluruh</h2>
+      <p class="section-note">Pilih satu bidang untuk melihat layanan di dalamnya.</p>
+      <div class="bidang-tabs" role="group" aria-label="Pilih bidang">
+        <button class="bidang-tab" data-bidang="business" aria-pressed="true">Business &amp; Marketing</button>
+        <button class="bidang-tab" data-bidang="creative" aria-pressed="false">Creative Design</button>
+        <button class="bidang-tab" data-bidang="technology" aria-pressed="false">Technology Development</button>
+      </div>
+      <p class="bidang-desc" id="bidang-desc"></p>
+      <div class="bidang-grid" id="bidang-isi"></div>
+    </section>
+
+    <section class="section" id="unit">
+      <p class="tag">// 01 unit_usaha</p>
+      <h2>Unit usaha kami</h2>
+      <div class="unit-grid">
+
+        <article class="unit-card card-blue">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3v8a3 3 0 0 0 3 3v7M8 3v6M11 3v8a3 3 0 0 1-3 3M17 3c-2 2-3 5-3 8h3v10"/></svg>
+          <h3>Unit F&amp;B</h3>
+          <p>Aneka makanan dan minuman untuk menemani kuliah, rapat, dan acara himpunan. Tersedia menu harian dan paket untuk kegiatan.</p>
+          <button class="btn btn-small" data-open="fnb">Detail pemesanan</button>
+        </article>
+
+        <article class="unit-card card-pink">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4v-7h16v7h-3M7 14h10v7H7z"/></svg>
+          <h3>Unit Percetakan &amp; Dokumen</h3>
+          <p>Layanan print, fotokopi, dan pengetikan dokumen untuk tugas, laporan, dan proposal dengan hasil rapi dan pengerjaan cepat.</p>
+          <button class="btn btn-small" data-open="percetakan">Detail pemesanan</button>
+        </article>
+
+        <article class="unit-card card-pink">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7l2-4h12l2 4M4 7h16v13H4zM9 12h6"/></svg>
+          <h3>Unit Konsinyasi</h3>
+          <p>Fasilitas titip jual untuk barang dan produk karya mahasiswa. Kamu cukup menitipkan produk, kami bantu memasarkannya.</p>
+          <button class="btn btn-small" data-open="konsinyasi">Detail penitipan</button>
+        </article>
+
+        <article class="unit-card card-blue">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v12H4zM12 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+          <h3>Unit Jasa Kreatif</h3>
+          <p>Layanan desain grafis, fotografi, dan videografi untuk poster, dokumentasi acara, hingga konten media sosial.</p>
+          <button class="btn btn-small" data-open="kreatif">Hubungi kami</button>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="layanan">
+      <p class="tag">// 02 layanan_dan_harga</p>
+      <h2>Layanan &amp; harga IT-Solution</h2>
+      <p class="section-note">Klik salah satu layanan untuk melihat harganya ya!</p>
+      <ul class="layanan-grid">
+        <li><button class="layanan-btn" data-layanan="print" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4v-7h16v7h-3M7 14h10v7H7z"/></svg><span>Print &amp; penjilidan</span></button></li>
+        <li><button class="layanan-btn" data-layanan="ketik" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM7 10h.01M11 10h.01M15 10h.01M7 14h10"/></svg><span>Pengetikan</span></button></li>
+        <li><button class="layanan-btn" data-layanan="instalasi" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg><span>Instalasi OS, aplikasi, dan lainnya</span></button></li>
+        <li><button class="layanan-btn" data-layanan="konsultasi" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v10H5zM2 19h20"/></svg><span>Konsultasi laptop/PC</span></button></li>
+        <li><button class="layanan-btn" data-layanan="editing" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v12H4zM12 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg><span>Photo &amp; video editing</span></button></li>
+        <li><button class="layanan-btn" data-layanan="desain" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16zM14 6l3 3"/></svg><span>Desain grafis</span></button></li>
+        <li><button class="layanan-btn" data-layanan="web" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span>Web sederhana</span></button></li>
+        <li><button class="layanan-btn" data-layanan="jual" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Jual ATK, snack, dan minuman</span></button></li>
+      </ul>
+
+      <div class="harga-panel" id="harga-panel" aria-live="polite">
+        <div class="code-bar">
+          <span class="dot dot-pink"></span><span class="dot dot-blue"></span><span class="dot dot-pink"></span>
+          <span class="code-file" id="harga-cmd">harga.sh</span>
+        </div>
+        <div class="panel-body">
+          <h3 id="harga-judul"></h3>
+          <div id="harga-isi"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="teknologi">
+      <p class="tag">// 03 tech_stack</p>
+      <h2>Teknologi di balik layanan kami</h2>
+      <p class="section-note">Bidang teknologi yang dekat dengan layanan IT-Solution dan dunia Teknik Informatika.</p>
+      <div class="tech-layout">
+      <div class="tech-hub" aria-hidden="true">
+        <svg viewBox="0 0 400 400">
+          <defs>
+            <linearGradient id="gradHub" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff93bc"/><stop offset="1" stop-color="#7fb4f5"/>
+            </linearGradient>
+          </defs>
+          <circle class="hub-ring" cx="200" cy="200" r="150"/>
+          <line class="hub-line" x1="200" y1="200" x2="350" y2="200"/>
+          <line class="hub-line" x1="200" y1="200" x2="275" y2="330"/>
+          <line class="hub-line" x1="200" y1="200" x2="125" y2="330"/>
+          <line class="hub-line" x1="200" y1="200" x2="50" y2="200"/>
+          <line class="hub-line" x1="200" y1="200" x2="125" y2="70"/>
+          <line class="hub-line" x1="200" y1="200" x2="275" y2="70"/>
+          <circle class="hub-core" cx="200" cy="200" r="50"/>
+          <text class="hub-text" x="200" y="194">IT</text>
+          <text class="hub-sub" x="200" y="214">Solution</text>
+          <circle class="hub-node" cx="350" cy="200" r="32"/><text class="hub-text" x="350" y="200">&lt;/&gt;</text>
+          <circle class="hub-node biru" cx="275" cy="330" r="32"/><text class="hub-text" x="275" y="330">{ }</text>
+          <circle class="hub-node" cx="125" cy="330" r="32"/><text class="hub-text" x="125" y="330">SQL</text>
+          <circle class="hub-node biru" cx="50" cy="200" r="32"/><text class="hub-text" x="50" y="200">OS</text>
+          <circle class="hub-node" cx="125" cy="70" r="32"/><text class="hub-text" x="125" y="70">NET</text>
+          <circle class="hub-node biru" cx="275" cy="70" r="32"/><text class="hub-text" x="275" y="70">AI</text>
+        </svg>
+      </div>
+      <ul class="tech-grid">
+        <li class="tech-card">
+          <span class="tech-icon" aria-hidden="true">&lt;/&gt;</span>
+          <h3>Teknologi Web</h3>
+          <p>HTML, CSS, dan JavaScript untuk membangun halaman dan aplikasi web, seperti landing page ini.</p>
+        </li>
+        <li class="tech-card">
+          <span class="tech-icon" aria-hidden="true">{ }</span>
+          <h3>Pemrograman</h3>
+          <p>Logika dan algoritma dengan bahasa seperti Python dan JavaScript untuk menyelesaikan masalah.</p>
+        </li>
+        <li class="tech-card">
+          <span class="tech-icon" aria-hidden="true">SQL</span>
+          <h3>Basis Data</h3>
+          <p>Menyimpan, mengatur, dan mencari data secara terstruktur dan efisien.</p>
+        </li>
+        <li class="tech-card">
+          <span class="tech-icon" aria-hidden="true">OS</span>
+          <h3>Sistem Operasi</h3>
+          <p>Windows dan Linux, mulai dari instalasi sampai pemeliharaan perangkat.</p>
+        </li>
+        <li class="tech-card">
+          <span class="tech-icon" aria-hidden="true">NET</span>
+          <h3>Jaringan Komputer</h3>
+          <p>Cara perangkat saling terhubung lewat jaringan lokal dan internet.</p>
+        </li>
+        <li class="tech-card">
+          <span class="tech-icon" aria-hidden="true">AI</span>
+          <h3>Kecerdasan Buatan</h3>
+          <p>Mesin yang belajar dari data untuk membantu mengambil keputusan.</p>
+        </li>
+      </ul>
+      </div>
+    </section>
+    <section class="section" id="alur">
+      <p class="tag">// alur_kerja</p>
+      <h2>Alur pemesanan</h2>
+      <p class="section-note">Lima tahap dari pesan pertama sampai hasilnya kamu terima.</p>
+      <ol class="alur-list">
+        <li><strong>Konsultasi</strong><span>Ceritakan kebutuhanmu lewat Instagram @its_hmpti.</span></li>
+        <li><strong>Perencanaan</strong><span>Kami jelaskan cakupan, biaya, dan tenggat waktunya.</span></li>
+        <li><strong>Pengerjaan</strong><span>Pesananmu dikerjakan oleh unit yang sesuai.</span></li>
+        <li><strong>Review &amp; revisi</strong><span>Kamu cek hasilnya, lalu kami perbaiki bila perlu.</span></li>
+        <li><strong>Delivery</strong><span>Hasil dikirim atau diambil langsung.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="faq">
+      <p class="tag">// faq</p>
+      <h2>Pertanyaan yang sering diajukan</h2>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Bagaimana cara memesan?</summary><p>Kirim pesan ke Instagram @its_hmpti, sebutkan layanan yang kamu butuhkan. Untuk print, kamu juga bisa datang langsung.</p></details>
+        <details class="faq-item"><summary>Di mana saya bisa melihat harga?</summary><p>Buka bagian Layanan, lalu klik layanan yang kamu mau. Untuk layanan yang belum punya daftar harga, hubungi kami untuk menanyakan biayanya.</p></details>
+        <details class="faq-item"><summary>Kapan jam operasionalnya?</summary><p>Semua unit buka Senin sampai Jumat, pukul 09.00 sampai 17.00.</p></details>
+        <details class="faq-item"><summary>Bisa dibuka lewat HP?</summary><p>Bisa. Halaman ini menyesuaikan ukuran layar HP, dan menu tersedia lewat tombol di pojok kanan atas.</p></details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="kontak">
+    <div class="footer-term">
+      <div class="code-bar">
+        <span class="dot dot-pink"></span><span class="dot dot-blue"></span><span class="dot dot-pink"></span>
+        <span class="code-file">kontak.sh</span>
+      </div>
+      <div class="footer-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <p class="out">HMP-TI ITS, Himpunan Mahasiswa Program Studi Teknik Informatika</p>
+        <p><span class="prompt">$</span> contact --instagram</p>
+        <p class="out"><a href="https://www.instagram.com/its_hmpti" target="_blank" rel="noopener">@its_hmpti</a></p>
+        <p><span class="prompt">$</span> contact --email</p>
+        <p class="out"><a href="mailto:its.hmpti@gmail.com">its.hmpti@gmail.com</a></p>
+        <p><span class="prompt">$</span> cat jam_operasional.txt</p>
+        <p class="out">Senin - Jumat, 09.00 - 17.00</p>
+        <p><span class="prompt">$</span> cat kota.txt</p>
+        <p class="out">Banjarmasin, Kalimantan Selatan</p>
+        <p><span class="prompt">$</span> echo "makasih sudah mampir"</p>
+        <p class="out">(◕‿◕)♡</p>
+        <p><span class="prompt">$</span> <a class="top-link" href="#beranda">cd ~</a><span class="kursor">|</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="modal" aria-labelledby="modal-title">
+    <div class="code-bar">
+      <span class="dot dot-pink"></span><span class="dot dot-blue"></span><span class="dot dot-pink"></span>
+      <span class="code-file">detail_unit.json</span>
+    </div>
+    <div class="modal-body">
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <dl>
+        <dt>jam_operasional</dt><dd id="modal-hours"></dd>
+        <dt>kontak</dt><dd id="modal-contact"></dd>
+      </dl>
+      <button class="btn btn-small" id="modal-close">Tutup</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
